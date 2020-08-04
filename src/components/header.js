@@ -18,17 +18,21 @@ const Header = ({ siteLogo }) => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
           <Nav as="ul" className = "ml-auto">
+          <Nav.Item as="li">
+              <Link  to="/" className="nav-link" activeClassName="active">Strona główna</Link>
+            </Nav.Item>
             <Nav.Item as="li">
               <Link  to="/pricing" className="nav-link" activeClassName="active">Cennik</Link>
             </Nav.Item>
             <Nav.Item as="li">
               <Link to="/admissions" className="nav-link" activeClassName="active">Rekrutacja</Link>
             </Nav.Item> 
-            <NavDropdown as="li" title="O nas" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/description">Opis</NavDropdown.Item>
-              <NavDropdown.Item href="/gallery">Zdjęcia</NavDropdown.Item>
-              <NavDropdown.Item href="/schedule">Plan dnia</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Item as="li">
+              <Link to="/description" className="nav-link" activeClassName="active">O nas</Link>
+            </Nav.Item> 
+            <Nav.Item as="li">
+              <Link to="/gallery" className="nav-link" activeClassName="active">Galeria</Link>
+            </Nav.Item> 
             <Nav.Item as="li">
               <Link to="/adaptation" className="nav-link" activeClassName="active">Adaptacja</Link>
             </Nav.Item> 
