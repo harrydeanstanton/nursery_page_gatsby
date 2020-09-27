@@ -15,3 +15,9 @@ body {
   text-align: center;
   font-size: 4em;
 }
+.card-text {
+  text-align: center;
+}
+.card-content-header {
+  margin-bottom: 10px;
+}

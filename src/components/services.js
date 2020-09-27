@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from 'react-bootstrap/Card'
 import { CardGroup } from "react-bootstrap";
-import './fontawesome'
+import './fontawesome';
+import "../components/layout_custom.css";
 
 
 const header = {
@@ -34,92 +35,100 @@ class Services extends React.Component {
 
         return(
                     
-            <Container style={{background: "#96bd37", maxWidth: '100%', padding: '30px 20px 30px 20px', marginTop: '30px', alignContent: 'center'}}>
+            <Container style={{background: "#96bd37", maxWidth: '100%', padding: '30px 20px 130px 20px', marginTop: '30px', alignContent: 'center'}}>
                         <Row className="justify-content-md-center" style= {{margin:"20px 0 20px 0"}}> 
-                            <h1 style={{color: 'white'}} >Zajęcia</h1>
+                            <h1 style={{color: 'white'}} >NAUKA POPRZEZ ZABAWĘ</h1>
                         </Row>
-                        <CardGroup style={{margin: '0 auto', width: '70%'}}>
+                        <CardGroup style={{margin: '0 auto', width: '80%'}}>
                             <Card className = "aaa" >
                                 
                                 <Card.Body>
                                 <Card.Title><FontAwesomeIcon icon={'coffee'}/></Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.
+                                   <h3 className="card-content-header">Zajęcia kulinarne</h3> 
+                                   Opis zajęć kulinarnych
                                 </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
+                                
                             </Card>
                             <Card>
                                 
                                 <Card.Body>
                                 <Card.Title><FontAwesomeIcon icon={'baby'}/></Card.Title>
                                 <Card.Text>
-                                    This card has supporting text below as a natural lead-in to additional
-                                    content.{' '}
+                                <h3 className = "card-content-header">Zajęcia plastyczne</h3> 
+                                   Opis zajęć plastycznych
                                 </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
+                                
                             </Card>
                             <Card>
                                 
                                 <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/>konik</Card.Title>
+                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This card has even longer content than the first to
-                                    show that equal height action.
+                                <h3 className = "card-content-header">Język angielski</h3> 
+                                   Program Dwujęzyczne Dzieci
                                 </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
+                                
+                            </Card>
+                            <Card>
+                                
+                                <Card.Body>
+                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
+                                <Card.Text>
+                                <h3 className = "card-content-header">Sensoplastyka</h3> 
+                                   Opis sensoplastyki
+                                </Card.Text>
+                                </Card.Body>
+                                
                             </Card>
                         </CardGroup>
-                        <CardGroup style={{margin: '0 auto', width: '70%'}}>
+                        <CardGroup style={{margin: '0 auto', width: '80%'}}>
                             <Card>
                                 
                                 <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.
+                                <h3 className = "card-content-header">Zajęcia muzyczne z językiem angielskim</h3> 
+                                Prowadzone przez Mr Melody
                                 </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
+                                
                             </Card>
                             <Card>
                                 
                                 <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
                                 <Card.Text>
-                                    This card has supporting text below as a natural lead-in to additional
-                                    content.{' '}
+                                <h3 className = "card-content-header">Teatr</h3> 
+                                Interaktywne przedstawienia prowadzone przez KULTURKA
                                 </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
+                                
                             </Card>
                             <Card>
                                 
                                 <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This card has even longer content than the first to
-                                    show that equal height action.
+                                <h3 className = "card-content-header">Logosensoryka</h3> 
+                                 Opis logosensoryki
                                 </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
+                                
+                            </Card>
+                            <Card>
+                                
+                                <Card.Body>
+                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
+                                <Card.Text>
+                                <h3 className = "card-content-header">Zajęcia motoryczne </h3> 
+                                 Opis zajęć motorycznych
+                                </Card.Text>
+                                </Card.Body>
+                                
                             </Card>
                         </CardGroup>
                     </Container>
