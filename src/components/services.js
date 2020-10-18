@@ -1,31 +1,39 @@
 import React from "react";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Card from 'react-bootstrap/Card'
 import { CardGroup } from "react-bootstrap";
-import './fontawesome';
 import "../components/layout_custom.css";
+import ServiceCard from './serviceCard';
+import Awesome from "./awesomeElement";
+import Bilangual from './bilangualLogo'
+import MrMelody from './mrMelodyLogo';
+import Logosensoryka from './logsensorykaLogo';
+import Sensoplastyka from './sensoplastykaLogo';
 
 
 const header = {
-    first: "zajęcia1",
-    second: "zajęcia2",
-    third: "zajęcia3",
-    fourth: "zajęcia4",
-    fifth: "zajęcia5",
-    sixth: "zajęcia6",
+    first: "zajęcia kulinarne",
+    second: "Zajęcia plastyczne",
+    third: "Język angielski",
+    fourth: "Sensoplastyka",
+    fifth: "Zajęcia muzyczne z j angielskim",
+    sixth: "Teatr",
+    seventh: "Logosensoryka",
+    eighth: "Zajęcia motoryczne"
+
 
 };
 const desc = {
-    first: "zajęcia1 opis",
-    second: "zajęcia2 opis",
-    third: "zajęcia3 opis",
-    fourth: "zajęcia4 opis",
-    fifth: "zajęcia5 opis",
-    sixth: "zajęcia6 opis",
-};
+    first: "Opis zajęć kulinarnych",
+    second: "Opis zajęć plastycznych",
+    third: "Program Dwujęzyczne Dzieci",
+    fourth: "Opis sensoplastyki",
+    fifth: "Prowadzone przez Mr Melody",
+    sixth: "Interaktywne przedstawienia prowadzone przez KULTURKA",
+    seventh: "Opis logosensoryki",
+    eighth: "Opis zajęć motorycznych"
+}
+
 
 
 
@@ -35,101 +43,58 @@ class Services extends React.Component {
 
         return(
                     
-            <Container style={{background: "#96bd37", maxWidth: '100%', padding: '30px 20px 130px 20px', marginTop: '30px', alignContent: 'center'}}>
+            <Container className ="services-container">
                         <Row className="justify-content-md-center" style= {{margin:"20px 0 20px 0"}}> 
-                            <h1 style={{color: 'white'}} >NAUKA POPRZEZ ZABAWĘ</h1>
+                            <h2 style={{color: 'grey'}} >Nauka poprzez zabawę</h2>
                         </Row>
                         <CardGroup style={{margin: '0 auto', width: '80%'}}>
-                            <Card className = "aaa" >
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'coffee'}/></Card.Title>
-                                <Card.Text>
-                                   <h3 className="card-content-header">Zajęcia kulinarne</h3> 
-                                   Opis zajęć kulinarnych
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
-                            <Card>
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'baby'}/></Card.Title>
-                                <Card.Text>
-                                <h3 className = "card-content-header">Zajęcia plastyczne</h3> 
-                                   Opis zajęć plastycznych
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
-                            <Card>
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
-                                <Card.Text>
-                                <h3 className = "card-content-header">Język angielski</h3> 
-                                   Program Dwujęzyczne Dzieci
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
-                            <Card>
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
-                                <Card.Text>
-                                <h3 className = "card-content-header">Sensoplastyka</h3> 
-                                   Opis sensoplastyki
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
+                            <ServiceCard
+                                icon =  {<Awesome name = {'pizza-slice'}/>}
+                                header = {header.first}
+                                description = {desc.first}
+                            /> 
+                            <ServiceCard
+                                icon =  {<Awesome name = {'paint-brush'}/>}
+                                header = {header.second}
+                                description = {desc.second}
+                            /> 
+                            <ServiceCard
+                                icon =  {<Awesome name = {'theater-masks'}/>}
+                                header = {header.sixth}
+                                description = {desc.sixth}
+                            /> 
+                            <ServiceCard
+                                icon =  {<Awesome name = {'child'}/>}
+                                header = {header.eighth}
+                                description = {desc.eighth}
+                            /> 
+                            
+                              
                         </CardGroup>
                         <CardGroup style={{margin: '0 auto', width: '80%'}}>
-                            <Card>
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
-                                <Card.Text>
-                                <h3 className = "card-content-header">Zajęcia muzyczne z językiem angielskim</h3> 
-                                Prowadzone przez Mr Melody
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
-                            <Card>
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
-                                <Card.Text>
-                                <h3 className = "card-content-header">Teatr</h3> 
-                                Interaktywne przedstawienia prowadzone przez KULTURKA
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
-                            <Card>
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
-                                <Card.Text>
-                                <h3 className = "card-content-header">Logosensoryka</h3> 
-                                 Opis logosensoryki
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
-                            <Card>
-                                
-                                <Card.Body>
-                                <Card.Title><FontAwesomeIcon icon={'horse'}/><br/></Card.Title>
-                                <Card.Text>
-                                <h3 className = "card-content-header">Zajęcia motoryczne </h3> 
-                                 Opis zajęć motorycznych
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
+                        <ServiceCard
+                                icon =  {<MrMelody/>}
+                                header = {header.fifth}
+                                description = {desc.fifth}
+                            /> 
+                            
+                            <ServiceCard
+                                icon =  {<Logosensoryka/>}
+                                header = {header.seventh}
+                                description = {desc.seventh}
+                            /> 
+                            <ServiceCard
+                                icon =  {<Bilangual/>}
+                                header = {header.third}
+                                description = {desc.third}
+                            /> 
+                            <ServiceCard
+                                icon =  {<Sensoplastyka/>}
+                                header = {header.fourth}
+                                description = {desc.fourth}
+                            /> 
+                            
+
                         </CardGroup>
                     </Container>
                      

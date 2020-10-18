@@ -10,7 +10,8 @@ import Col from 'react-bootstrap/Col'
 
 const cardStyles = {
 
-    textAlign: 'center'
+    textAlign: 'center',
+    grey: 'grey'
 }
 
 const Branches = () => (

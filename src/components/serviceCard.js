@@ -1,14 +1,17 @@
 import React from "react";
 import styled from 'styled-components';
 import Card from 'react-bootstrap/Card'
+import "../components/layout_custom.css";
 
-const ServiceCard = (icon, header, description) => (
+const ServiceCard = (props) => (
 
-    <Card>
-       <Card.Img src= {icon}/>
+    <Card style={{backgroundColor: 'lightgrey'}} >
+       
        <Card.Body>
-            <Card.Title>{header}</Card.Title>
-            <Card.Text>{description}</Card.Text>
+            <Card.Title>{props.icon}</Card.Title> 
+            <Card.Text><span className="card-content-header">{props.header}</span>
+            {props.description}
+            </Card.Text>
        </Card.Body>
     </Card>
 )
